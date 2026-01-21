@@ -1,0 +1,1 @@
+javascript:(()=>{const a=document.querySelector('[data-content="conversation"]');const b=a?a.querySelectorAll('[role="article"]'):[];const c=Array.from(b).map(e=>e.innerText.trim()).filter(e=>e.length>0).join("\n\n");console.log(c);navigator.clipboard.writeText(c).then(()=>{alert("Copied Copilot chat to clipboard!")});})();
