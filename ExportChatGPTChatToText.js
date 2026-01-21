@@ -1,0 +1,1 @@
+javascript:(()=>{const a=document.querySelectorAll("main article"),b=Array.from(a).map(e=>e.innerText.trim()).filter(e=>e.length>0).join("\n\n");console.log(b);navigator.clipboard.writeText(b).then(()=>{alert("Chat text copied to clipboard!")});})();
